@@ -25,7 +25,10 @@ cp .env.example .env
 Run the following command to generate the burndown chart (`burndown_chart.png`).
 
 ```bash
-poetry run python main.py
+poetry run python main.py 1m
+
+# To see the help message
+poetry run python main.py --help
 ```
 
 ## Development
