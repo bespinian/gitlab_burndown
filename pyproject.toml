@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "gitlab-burndown"
+version = "0.1.0"
+description = ""
+authors = ["Matthias Osswald <matthias@bespinian.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-gitlab = "^4.11.1"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ruff = "^0.6.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "Q", "I"]
+ignore = ["E203", "E501"]
